@@ -1,0 +1,13 @@
+﻿procedure TForm1.BitBtn2Click(SEnder: TObject);
+var S:string;i,n:integer;code:byte;
+Begin
+S:=ListBox1.Items[0];n:=Length(S);
+for i:=1 to n do
+Begin
+if S[i] in ['A'..'Z']then
+Begin
+Inc(code);
+S[i]:=Chr(code)
+End
+End;
+End;
